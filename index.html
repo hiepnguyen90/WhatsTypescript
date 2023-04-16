@@ -32,7 +32,44 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+
+        body {
+
+    background-color: var(--light-gray);
+    background-image: url('https://media.discordapp.net/attachments/1085033367336124446/1096418551650332723/IMG_0636.png?width=1173&height=880');
+    background-repeat: repeat-y;
+    background-size: cover;
+    animation: scroll-background 60s linear infinite;
+  }
+
+   h1 {
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+  
+   }
+
+  ul {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @keyframes scroll-background {
+  0% {
+    background-position: 0 5000px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+
+}
+      
+        }
+    
     </style>
 
     
@@ -40,7 +77,7 @@
     <link href="navbar-top.css" rel="stylesheet">
   </head>
   <body>
-    
+    <audio id="player" autoplay controls><source src="song.mp3" type="audio/mp3"></audio>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Look It Up!</a>
@@ -65,9 +102,8 @@
 </nav>
 
 <main class="container">
-  <div class="bg-light p-5 rounded">
-    <h1>Definition</h1>
-    <p class="lead">Use this part of the page to present your results from the API call.</p>
+  <div class= "p-5 rounded">
+    <h1 style=>Definition</h1>
     <ul class="list-unstyled">
         <li>This is a list. Your word could go here.</li>
         <li>It appears completely unstyled.</li>
